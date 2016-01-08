@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" fx:id="myAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="370.00010681152344" prefWidth="387.0" style="-fx-background-color: skyblue;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+  <children>
+    <TextField fx:id="interlocutorUserNameTextField" layoutX="14.0" layoutY="14.0" prefWidth="359.0" promptText="recipient username" />
+    <Separator layoutX="14.0" layoutY="42.0" prefWidth="359.0" />
+    <TextArea fx:id="conversationHistoryTextArea" editable="false" layoutX="14.0" layoutY="52.0" prefHeight="179.0" prefWidth="359.0" promptText="conversation history" wrapText="true" />
+    <TextArea fx:id="messageContentTextArea" layoutX="14.0" layoutY="241.0" prefHeight="57.0" prefWidth="277.0" promptText="message" wrapText="true" />
+    <Button fx:id="sendMessageButton" layoutX="301.0" layoutY="241.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="72.0" text="Send Message" textAlignment="CENTER" wrapText="true">
+      <font>
+        <Font name="Century Schoolbook Bold" size="12.0" fx:id="x1" />
+      </font>
+    </Button>
+    <Label fx:id="errorLabel" alignment="CENTER" contentDisplay="CENTER" font="$x1" layoutX="14.0" layoutY="309.0" prefHeight="40.0" prefWidth="359.0" text="" textAlignment="CENTER" textFill="RED" wrapText="true" />
+  </children>
+</AnchorPane>
